@@ -1,0 +1,35 @@
+#enviar {
+  margin: 0 auto 0 auto;
+}
+
+.captcha {
+  width: 200px;
+  height: 60px;
+  margin: 0 auto 0 auto;
+}
+
+.area{
+    width: 50px;
+    height: 45px;
+    background-color: #ccc;
+    float: left;
+    margin: 8px;
+    cursor: move;
+    
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    cursor: move;
+    align-items: center;
+}
+
+.area label {
+    display: block;
+    font-size: xx-large;
+    text-align: center;
+    cursor: move;
+}

@@ -1,0 +1,566 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+	/*background: #2b2e4f url("/img/bk.jpg") top center no-repeat;*/
+}
+
+a {
+	text-decoration: none;
+	color: #09f;
+}
+
+a:hover {
+	color: #03c;
+}
+
+hr {
+	color: #09f;
+	border: 1px solid #eee;
+}
+
+.containerHome {
+	clear: both;
+}
+
+.contentHome {
+	/*max-width: 1128px;*/
+	margin: 1em auto 1em auto;
+	overflow: hidden;
+}
+
+.container {
+	clear: both;
+}
+
+.content {
+	max-width: 1128px;
+	margin: 1em auto 1em auto;
+	overflow: hidden;
+	background: #fff;
+	padding: 0.5em;
+}
+
+h1, h2 {
+	font-weight:normal;
+	text-align: center;
+}
+
+h3 {
+	font-weight:normal;
+}
+
+.barTop {
+	min-height: 50px;
+}
+
+.barTopLeft {
+	float: left;
+}
+
+.barTopRight {
+	float: right;
+}
+
+.header {
+}
+
+.logo {
+	max-width: 350px;
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.headerSearch {
+}
+
+.search {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.search input[type=text] {
+	padding: 1em;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	width: 75%;
+	border: 1px solid #999;
+}
+
+.search input[type="submit"]{
+	padding: 1em 1em 1em 1em;
+	background: #09f;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	border: 1px solid #09f;
+	cursor: pointer;
+	-webkit-appearance: none;
+	/*background: #fff url("/img/lupa.png") 0 0 no-repeat;*/
+}
+
+.search input[type="submit"]:hover {
+	border: 1px solid #039;
+	background: #039;
+}
+
+.mensagem {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.mensagem h2 {
+}
+
+.mensagem p {
+	text-align: center;
+}
+
+.aguarde {
+    /*background: #fff url("/img/loading.gif") no-repeat top center;*/
+    z-index: 99;
+	margin: 0.5em auto;
+	padding: 0.5em;
+	text-align: center;
+	display: none;
+	clear: both;
+	overflow: hidden;
+}
+
+.loader {
+  border-radius: 50%;
+  border-top: 7px solid #09f;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid #09f;
+  border-left: 7px solid #eee;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 0.5em auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.icons {
+}
+
+.icons div {
+	text-align: center;
+}
+
+.icons h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.icons p {
+	margin: 0;
+	padding: 0.5em;
+}
+
+.icons p a {
+	color: #09f;
+}
+
+.iconsCompartilhar {
+	max-width: 780px;
+	margin: 1em auto 0 auto;
+	text-align: center;
+}
+
+.nextPrev {
+	text-align: center;
+	overflow: hidden;
+	padding: 1em 0 1em 0;
+}
+
+.resultadosAnteriores {
+	border: 1px solid #09f;
+	background: #fff;
+	padding: 0.5em 1em 0.5em 1em;
+	color: #09f;
+}
+
+.resultadosAnteriores:hover {
+	background: #09f;
+	color: #fff;
+}
+
+.resultadosAnteriores::before {
+	content: "Voltar";
+}
+
+.maisResultados {
+	border: 1px solid #09f;
+	background: #fff;
+	padding: 0.5em 1em 0.5em 1em;
+	color: #09f;
+}
+
+.maisResultados:hover {
+	background: #09f;
+	color: #fff;
+}
+
+.maisResultados::before {
+	content: "Mais resultados";
+}
+
+@media only screen and (min-width: 481px) and (max-width: 9000px) {
+.icons div {
+	margin: 2%;
+	width: 45.5%;
+	min-height: 335px;
+	float: left;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+.icons div {
+	margin: 1em 1em 2em 1em;
+	border: 0;
+}
+
+}
+
+.logoResults {
+	float: left;
+}
+
+.logoResults img {
+	width: 120px;
+}
+
+.searchResults {
+	float: right;
+	margin-top: 2em;
+}
+
+.searchResults input[type=text] {
+	padding: 0.3em;
+	width: 50%;
+	border: 1px solid #009;
+}
+
+.searchResults input[type="submit"]{
+	cursor: pointer;
+	padding: 0.3em;
+	margin-left: -0.5em;
+	background: #009;
+	color: #fff;
+	border: 0;
+}
+
+h3.mensagemResultados {
+	padding: 0 0 0 0.5em;
+}
+
+div.result {
+	margin: 0 0.5em 0 0.5em;
+	padding: 0.5em;
+}
+
+div.result p {
+	margin: 0;
+	padding: 0;
+}
+
+p.title a {
+	color: #039;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+p.description {
+	color: #555;
+}
+
+p.url a {
+	color: #063;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+.footer {
+	color: #555;
+}
+
+.footerContent {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.footerContent p {
+	padding: 0.5em;
+	max-width: 570px;
+	margin: 5em auto 0 auto;
+	text-align: center;
+	font-size: 0.8em;
+	color: #555;
+}
+
+.footerLeft {
+	float: left;
+	width: 49%;
+}
+
+.footerRight {
+	float: right;
+	width: 49%;
+}
+
+/*---- ANUNCIOS -----*/
+
+/*---- ANUNCIO EM DESTAQUE -----*/
+
+.anuncio {
+	border: 2px solid #09f;	
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	background: #fff;
+	margin: 0 0.5em 1em 0.5em;
+	color: #555;
+}
+
+.anuncio h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 1.3em
+}
+
+.anuncio h3 a {
+	color: #039;
+	text-decoration: none;	
+}
+
+.anuncio p {
+	margin: 0;
+	padding: 0;
+}
+
+.anuncio a {
+	text-decoration: none;
+	font-size: 0.9em;
+	text-decoration:none;
+	color: #063;
+}
+
+div.anuncioBts {
+	overflow: hidden;
+	padding: 0.3em 0 0.3em 0;
+}
+
+p.anuncioBtsLeft {
+	float: left;
+	min-width: 65px;
+}
+
+.anuncioBtsRight {
+	float: right;
+}
+
+
+/*a.anuncioGostar {
+	background: #fff url("/img/img_gostei.png") no-repeat top center;
+	border: 0px solid #09f;
+	margin-right: 5px;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+}
+
+a.anuncioGostar::before {
+	content: "";
+}
+
+a.anuncioGostar:hover {
+	background: #fff url("/img/img_gostei2.png") no-repeat top center;
+}
+
+a.anuncioCompartilhar {
+	background: #fff url("/img/img_share.png") no-repeat top center;
+	border: 0px solid #09f;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: right;	
+}
+
+a.anuncioCompartilhar::before {
+	content: "";		
+}
+
+
+a.anuncioCompartilhar:hover {
+	background: #fff url("/img/img_share2.png") no-repeat top center;	
+}*/
+
+
+a.anuncioGostar {
+	background: #fff;
+	color: #09f;
+	border: 1px solid #09f;
+	text-decoration: none;	
+    font-size: 0.8em;
+    float: left;
+    margin: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 5px;
+}
+a.anuncioGostar::before {
+	content: "Gostei";
+}
+a.anuncioGostar:hover {
+	background: #09f;
+	color: #fff;
+}
+
+a.anuncioCompartilhar {
+	background: #fff;
+	color: #09f;
+	border: 1px solid #09f;
+	text-decoration: none;		
+    font-size: 0.8em;
+    float: left;
+    margin: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 5px;
+}
+a.anuncioCompartilhar::before {
+	content: "Compartilhar";		
+}
+a.anuncioCompartilhar:hover {
+	background: #09f;
+	color: #fff;	
+}
+
+.botaoContatoDireto
+{
+    background: #fff;
+    color: #09f;
+    border: 1px solid #09f;
+    text-decoration: none;
+    font-size: 0.8em;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+}
+.botaoContatoDireto:hover {
+    background: #09f;
+    color: #fff;
+}
+
+.botaoTelContatoDireto
+{
+    background: #fff;
+    color: #09f;
+    border: 1px solid #09f;
+    text-decoration: none;
+    font-size: 0.8em;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+}
+.botaoTelContatoDireto:hover {
+    background: #09f;
+    color: #fff;
+}
+
+a.botaoWhatsappContatoDireto
+{
+    background: #fff url("../img/icon_compartilhar_whatsapp.png") no-repeat 3px 0px;
+    background-size: 15px;
+    color: #09f;
+    border: 1px solid #09f;
+    text-decoration: none;
+    font-size: 0.8em;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 22px;
+}
+.botaoWhatsappContatoDireto:hover {
+    background: #09f;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+a.anuncioDivulgaFacil {
+	font-size: 0.7em;
+	background: #fff;
+	color: #999;
+	padding: 0 5px 0 5px;
+	text-decoration: none;
+}
+
+a.anuncioDivulgaFacil:hover {
+	background: #039;
+	color: #fff;	
+}
+
+/* --- FALE CONOSCO - CONTATO -- */
+
+.contato {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.contato input[type=text] {
+	padding: 1em;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	width: 80%;
+	border: 1px solid #999;
+}
+
+.contato textarea {
+	padding: 1em;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	width: 80%;
+	border: 1px solid #999;
+}
+
+.contato input[type="submit"]{
+	padding: 1em 2em 1em 2em;
+	background: #09f;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	border: 1px solid #09f;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+.contato input[type="submit"]:hover {
+	border: 1px solid #039;
+	background: #039;
+}
+
+.ntRobotic {
+	display: none;	
+}

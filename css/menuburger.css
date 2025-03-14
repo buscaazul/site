@@ -1,0 +1,118 @@
+.menuBurger {
+	position: absolute;
+	z-index: 999;
+}
+
+.toggle-nav {
+	display: none;
+}
+
+.mobile-bar {
+  position: relative;
+  min-height: 50px;
+  /*background-color: #E53935;
+  background-color: #06c;
+  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);*/
+}
+
+.mobile-bar label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border: 0px solid #ccc;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  /*background: #eee;*/
+}
+
+.mobile-bar label:after {
+  content: "\2630";
+  font-size: 2em;
+  color: #333;
+  /*line-height: 60px;*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+/** Slide-Down Effect **/
+
+.toggle-nav:checked ~ .containerMenuBurger { /* when the checkbox is checked the container slide-down */
+  /*-webkit-transform: translateY(270px);
+  transform: translateY(270px);*/
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+  -webkit-transform: translate3d(0, 1000px, 0);
+  /*transform: translate3d(0, 270px, 0);*/
+  transform: translate3d(0, 1000px, 0);
+  z-index: 999;
+}
+
+/** Label Effect (Menu Icon) **/
+
+.toggle-nav:checked + .mobile-bar label {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.toggle-nav:checked + .mobile-bar label:after {
+	color: #333;
+	content: "x";
+}
+
+/** containerMenuBurger **/
+
+.containerMenuBurger {
+  /*margin-top: -270px;*/
+  margin-top: -1000px;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/** Header **/
+
+.headerMenuBurger {
+	/*background-color: #E53935;*/
+}
+
+.headerMenuBurger ul {
+  text-align: left;
+  text-transform: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.headerMenuBurger a {
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #039;
+  text-decoration: none;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  border-bottom: 0px solid #ccc;
+}
+
+/*.headerMenuBurger a:active {
+	background-color: #D32F2F;
+}*/
+
+.headerMenuBurger a:hover {
+	background-color: #fff;
+	color: #03c;
+}
+
+
